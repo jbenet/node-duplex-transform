@@ -1,7 +1,7 @@
 # duplex-transform
 
-Syntactic sugar for making "wrapping" (piping) a duplex stream
-with some transforms.
+Syntactic sugar for making wrapping + piping duplex streams
+with transforms (like encoding/decoding).
 
 ```
 npm install duplex-transform
