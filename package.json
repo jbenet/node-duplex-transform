@@ -1,0 +1,29 @@
+{
+  "name": "duplex-transform",
+  "version": "0.1.0",
+  "description": "duplex transform",
+  "main": "index.js",
+  "dependencies": {
+    "dgram-stream": "~0.2.0",
+    "duplexer": "~0.1.1",
+    "through2": "~0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"no test yet :(\" && exit -1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jbenet/node-duplex-transform.git"
+  },
+  "keywords": [
+    "duplex",
+    "transform",
+    "stream"
+  ],
+  "author": "Juan Benet <juan@benet.ai> (http://juan.benet.ai/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenet/node-duplex-transform/issues"
+  }
+}
