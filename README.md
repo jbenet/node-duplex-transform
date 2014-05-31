@@ -7,6 +7,8 @@ with transforms (like encoding/decoding).
 npm install duplex-transform
 ```
 
+![dat](http://img.shields.io/badge/Development%20sponsored%20by-dat-green.svg?style=flat)
+
 ## Use Case
 
 Say you have a duplex stream, and it's super cool. Except that it
