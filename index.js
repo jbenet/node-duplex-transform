@@ -12,9 +12,9 @@ function duplexTransform(outgoing, stream, incoming) {
     incoming = through2(incoming)
 
   var wrapped = bun([outgoing, stream, incoming])
-  bun.outgoing = outgoing
-  bun.middle = stream
-  bun.incoming = incoming
+  wrapped.outgoing = outgoing
+  wrapped.middle = stream
+  wrapped.incoming = incoming
   return wrapped
 }
 
