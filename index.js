@@ -1,5 +1,5 @@
 var through2 = require('through2')
-var duplexer = require('duplexer')
+var bun = require('bun')
 
 // syntactic sugar for wrapping a duplex stream with two transforms.
 module.exports = duplexTransform
@@ -11,8 +11,11 @@ function duplexTransform(outgoing, stream, incoming) {
   if (typeof(incoming) === 'function')
     incoming = through2(incoming)
 
-  outgoing.pipe(stream).pipe(incoming)
-  return duplexer(outgoing, incoming)
+  var wrapped = bun([outgoing, stream, incoming])
+  bun.outgoing = outgoing
+  bun.middle = stream
+  bun.incoming = incoming
+  return wrapped
 }
 
 // sugar for not having to include through2 just for `.obj`
