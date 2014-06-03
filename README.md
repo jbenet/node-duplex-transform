@@ -1,6 +1,6 @@
 # duplex-transform
 
-Syntactic sugar for making wrapping + piping duplex streams
+**Streams2** syntactic sugar for making wrapping + piping duplex streams
 with transforms (like encoding/decoding).
 
 ```
