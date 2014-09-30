@@ -8,7 +8,7 @@
     "bun": "~0.0.10"
   },
   "devDependencies": {
-    "dgram-stream": "~0.2.0"
+    "dgram-stream": "^0.2.0"
   },
   "scripts": {
     "test": "echo \"no test yet :(\" && exit -1"
